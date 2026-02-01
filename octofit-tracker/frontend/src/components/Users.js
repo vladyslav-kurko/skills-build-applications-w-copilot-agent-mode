@@ -8,8 +8,7 @@ function Users() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const codespaceUrl = `https://${process.env.REACT_APP_CODESPACE_NAME || 'localhost'}-8000.app.github.dev`;
-        const apiUrl = `${codespaceUrl}/api/users/`;
+        const apiUrl = `https://${process.env.REACT_APP_CODESPACE_NAME || 'localhost'}-8000.app.github.dev/api/users/`;
         
         console.log('Fetching users from:', apiUrl);
         

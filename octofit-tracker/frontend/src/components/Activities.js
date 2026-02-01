@@ -8,8 +8,7 @@ function Activities() {
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        const codespaceUrl = `https://${process.env.REACT_APP_CODESPACE_NAME || 'localhost'}-8000.app.github.dev`;
-        const apiUrl = `${codespaceUrl}/api/activities/`;
+        const apiUrl = `https://${process.env.REACT_APP_CODESPACE_NAME || 'localhost'}-8000.app.github.dev/api/activities/`;
         
         console.log('Fetching activities from:', apiUrl);
         

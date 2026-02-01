@@ -8,8 +8,7 @@ function Leaderboard() {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const codespaceUrl = `https://${process.env.REACT_APP_CODESPACE_NAME || 'localhost'}-8000.app.github.dev`;
-        const apiUrl = `${codespaceUrl}/api/leaderboards/`;
+        const apiUrl = `https://${process.env.REACT_APP_CODESPACE_NAME || 'localhost'}-8000.app.github.dev/api/leaderboards/`;
         
         console.log('Fetching leaderboard from:', apiUrl);
         

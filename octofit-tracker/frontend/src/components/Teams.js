@@ -8,8 +8,7 @@ function Teams() {
   useEffect(() => {
     const fetchTeams = async () => {
       try {
-        const codespaceUrl = `https://${process.env.REACT_APP_CODESPACE_NAME || 'localhost'}-8000.app.github.dev`;
-        const apiUrl = `${codespaceUrl}/api/teams/`;
+        const apiUrl = `https://${process.env.REACT_APP_CODESPACE_NAME || 'localhost'}-8000.app.github.dev/api/teams/`;
         
         console.log('Fetching teams from:', apiUrl);
         
